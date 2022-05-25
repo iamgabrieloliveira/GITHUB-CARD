@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+  <H1 id="errorMessage">Usuário não encontrado, digite um usuário válido.</H1>
+  <div class="card">
+    <h1 id="userName"></h1>
+    <img id="userImg" src="">
+    <h1 id="rocketcard"><i class="uil uil-github"></i>GITCARD</h1>
+    <div class="userDetails">
+      <p id="userFollowers"><img src="assets/followers.svg"> </p>
+      <p id="userFollowing"><img src="assets/following.svg"> </p>
+      <p id="userRepos"><img src="assets/repository.svg"> </p>
+      <p id="userLocation"><img src="assets/location.svg"> </p>
+    </div>
+  </div>
+  <div id="inputContainer">
+    <div class="git-title">
+    <i class="uil uil-github"></i>
+    <h1>GitHub Search</h1>
+    </div>
+    <h1>Digite o usuário que você deseja buscar no GitHub</h1>
+  <div class="buttons">
+  <input type="text" id="userId">
+  </div>
+
+  </div>
+</body>
+<script src="main.js"></script>
+</html>

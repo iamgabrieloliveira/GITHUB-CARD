@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Prompt', sans-serif;
+}
+body{
+  background: black;
+}
+
+.card{
+  border: 1px solid #555454;
+  box-shadow: 0px 0px 1px 1px rgba(90, 89, 89, 0.462);
+  border-radius: 10px;
+  height: 600px;
+  width: 400px;
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  transition: .6s;
+  cursor: pointer;
+}
+.card:hover{
+  box-shadow: 0px 0px 5px 10px rgba(90, 89, 89, 0.214);
+  transform: translate(-50%, -55%);
+
+}
+#rocketcard{
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  gap: 5px  ;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+#rocketcard > i{
+  font-size: 29px;
+}
+#userName{
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  gap: 10px;
+}
+.userDetails{
+  position: absolute;
+  border: 1px solid #555454;
+  padding: 20px;
+  padding-bottom: 30px;
+  width: 170px;
+  height: 140px;
+  bottom: 80px;
+  left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 15px;
+  background: #2C2C2E;
+  box-shadow: 0px 0px 10px 10px rgba(15, 20, 149, 0.113);
+}
+.userDetails > p{
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.userDetails > p > img{
+    width: 25px;
+}
+#userImg{
+  width: 200px;
+  border-radius: 200px;
+  border: 1px solid rgb(61, 59, 59);
+}
+#inputContainer{
+  width: 500px;
+  position: absolute;
+  left: 80%;
+  bottom: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+.buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.buttons > input{
+  color: black;
+  padding-left: 5px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 0px 5px 5px rgba(90, 89, 89, 0.462);
+  font-size: 20px;
+}
+
+.git-title{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.git-title > i{
+  font-size: 40px;
+}
+#errorMessage{
+  text-align: center;
+  background: red;
+  visibility: hidden;
+  opacity: 0;
+  transition: .6s;
+  font-size: 22px;
+}
+#errorMessage.on{
+  visibility: visible;
+  opacity: 1;
+}
